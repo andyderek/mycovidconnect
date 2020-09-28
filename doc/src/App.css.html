@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>App.css</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" media="all" href="../doc-style.css" />
+  <script src="../doc-filelist.js"></script>
+  <script>
+    var relativeDir = "../";
+    var thisFile = "src/App.css";
+    var defaultSidebar = true;
+  </script>
+  <script src="../doc-script.js"></script>
+
+</head>
+<body>
+  <div id="sidebar_wrapper">
+    <div id="sidebar_switch">
+      <span class="tree">Files</span>
+      <span class="headings">Headings</span>
+    </div>
+    <div id="tree"></div>
+    <div id="headings">
+
+    </div>
+  </div>
+  <div id="sidebar-toggle"></div>
+  <div id="container">
+    <div class="background highlight"></div>
+<table cellpadding="0" cellspacing="0">
+  <tbody>
+    
+      <tr>
+        <td class="docs">
+          <h1>App.css</h1>
+        </td>
+        <td class="code highlight"></td>
+      </tr>
+    
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-1" id="section-1"></a>
+</div>
+
+        </td>
+        <td class="code highlight">
+          <pre class="css"><span class="hljs-selector-tag">body</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#ffffff</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+}
+
+* {
+  <span class="hljs-attribute">font-family</span>: Arial, Helvetica, sans-serif;
+}
+
+<span class="hljs-comment">/**************/</span>
+<span class="hljs-comment">/*** HEADER ***/</span>
+<span class="hljs-comment">/**************/</span>
+
+<span class="hljs-selector-tag">header</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: auto;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">15px</span> <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">1px</span> <span class="hljs-number">0px</span> <span class="hljs-number">10px</span> -<span class="hljs-number">5px</span> <span class="hljs-number">#000</span>;
+}
+
+<span class="hljs-selector-tag">header</span> <span class="hljs-selector-class">.headerin</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">98%</span>;
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">1600px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">80px</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+}
+
+<span class="hljs-selector-tag">header</span> <span class="hljs-selector-class">.headerin</span> <span class="hljs-selector-class">.logo</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">215px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">float</span>: left;
+  <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">"/logo.png"</span>);
+  <span class="hljs-attribute">background-size</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">background-repeat</span>: no-repeat;
+  <span class="hljs-attribute">background-position</span>: center;
+}
+
+<span class="hljs-comment">/**************/</span>
+<span class="hljs-comment">/*** FOOTER ***/</span>
+<span class="hljs-comment">/**************/</span>
+
+<span class="hljs-selector-tag">footer</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: auto;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">30px</span> <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#2f97f2</span>;
+}
+
+<span class="hljs-selector-tag">footer</span> <span class="hljs-selector-class">.footerin</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">98%</span>;
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">1400px</span>;
+  <span class="hljs-attribute">height</span>: auto;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;
+  <span class="hljs-attribute">letter-spacing</span>: <span class="hljs-number">1px</span>;
+}
+
+<span class="hljs-selector-tag">footer</span> <span class="hljs-selector-class">.footerin</span> <span class="hljs-selector-tag">h3</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">font-weight</span>: bold;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">10px</span> <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;
+}
+
+<span class="hljs-selector-tag">footer</span> <span class="hljs-selector-class">.footerin</span> <span class="hljs-selector-tag">div</span><span class="hljs-selector-pseudo">:first-child</span> <span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0557bd</span>;
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">18px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">15px</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">30px</span> <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">150px</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5px</span>;
+  <span class="hljs-attribute">letter-spacing</span>: <span class="hljs-number">2px</span>;
+  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">10px</span> -<span class="hljs-number">5px</span> <span class="hljs-number">#000</span>;
+  <span class="hljs-attribute">cursor</span>: pointer;
+  <span class="hljs-attribute">text-decoration</span>: none;
+  <span class="hljs-attribute">display</span>: block;
+  <span class="hljs-attribute">text-align</span>: center;
+}
+
+<span class="hljs-selector-tag">footer</span> <span class="hljs-selector-class">.footerin</span> <span class="hljs-selector-tag">div</span><span class="hljs-selector-pseudo">:first-child</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#003474</span>;
+}
+
+<span class="hljs-selector-tag">footer</span> <span class="hljs-selector-class">.footerin</span> <span class="hljs-selector-tag">ul</span> {
+  <span class="hljs-attribute">list-style</span>: none;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+}
+<span class="hljs-selector-tag">footer</span> <span class="hljs-selector-class">.footerin</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> {
+  <span class="hljs-attribute">list-style</span>: none;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">0px</span>;
+}
+
+<span class="hljs-selector-tag">footer</span> <span class="hljs-selector-class">.footerin</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">text-decoration</span>: none;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+  <span class="hljs-attribute">text-transform</span>: uppercase;
+}
+
+<span class="hljs-selector-tag">footer</span> <span class="hljs-selector-class">.footerin</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">text-decoration</span>: underline;
+}
+
+<span class="hljs-selector-tag">footer</span> <span class="hljs-selector-class">.footerin</span> <span class="hljs-selector-tag">div</span> {
+  <span class="hljs-attribute">height</span>: auto;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+}
+
+<span class="hljs-selector-tag">footer</span> <span class="hljs-selector-class">.footerin</span> <span class="hljs-selector-class">.w40</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">40%</span>;
+}
+
+<span class="hljs-selector-tag">footer</span> <span class="hljs-selector-class">.footerin</span> <span class="hljs-selector-class">.w30</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">30%</span>;
+}
+
+<span class="hljs-comment">/******************/</span>
+<span class="hljs-comment">/*** COPYRIGHTS ***/</span>
+<span class="hljs-comment">/******************/</span>
+
+<span class="hljs-selector-id">#copyrights</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#1e2248</span>;
+}
+
+<span class="hljs-selector-id">#copyrights</span> <span class="hljs-selector-class">.copyrights-in</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">98%</span>;
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">1600px</span>;
+  <span class="hljs-attribute">height</span>: auto;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">display</span>: flex;
+}
+
+<span class="hljs-selector-id">#copyrights</span> <span class="hljs-selector-class">.copyrights-in</span> <span class="hljs-selector-class">.copyrights-text</span> {
+  <span class="hljs-attribute">width</span>: auto;
+  <span class="hljs-attribute">height</span>: auto;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">float</span>: left;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">50%</span>;
+  <span class="hljs-attribute">text-align</span>: left;
+}
+
+<span class="hljs-selector-id">#copyrights</span> <span class="hljs-selector-class">.copyrights-in</span> <span class="hljs-selector-class">.copyrights-text</span> <span class="hljs-selector-tag">p</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">letter-spacing</span>: <span class="hljs-number">1px</span>;
+}
+
+<span class="hljs-selector-id">#copyrights</span> <span class="hljs-selector-class">.copyrights-in</span> <span class="hljs-selector-class">.social-icons</span> {
+  <span class="hljs-attribute">width</span>: auto;
+  <span class="hljs-attribute">height</span>: auto;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">float</span>: right;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">50%</span>;
+  <span class="hljs-attribute">text-align</span>: right;
+}
+
+<span class="hljs-selector-id">#copyrights</span> <span class="hljs-selector-class">.copyrights-in</span> <span class="hljs-selector-class">.social-icons</span> <span class="hljs-selector-tag">ul</span> {
+  <span class="hljs-attribute">list-style</span>: none;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+}
+
+<span class="hljs-selector-id">#copyrights</span> <span class="hljs-selector-class">.copyrights-in</span> <span class="hljs-selector-class">.social-icons</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> {
+  <span class="hljs-attribute">display</span>: inline;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span> <span class="hljs-number">15px</span>;
+}
+
+<span class="hljs-selector-id">#copyrights</span> <span class="hljs-selector-class">.copyrights-in</span> <span class="hljs-selector-class">.social-icons</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span> {
+  <span class="hljs-attribute">text-decoration</span>: none;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;
+}
+
+<span class="hljs-selector-id">#copyrights</span> <span class="hljs-selector-class">.copyrights-in</span> <span class="hljs-selector-class">.social-icons</span> <span class="hljs-selector-tag">ul</span> <span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#2f97f2</span>;
+}
+
+<span class="hljs-comment">/*******************/</span>
+<span class="hljs-comment">/*** HOME BANNER ***/</span>
+<span class="hljs-comment">/*******************/</span>
+
+<span class="hljs-selector-id">#banner</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: auto;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">80px</span> <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">background-repeat</span>: no-repeat;
+  <span class="hljs-attribute">background-position</span>: center;
+  <span class="hljs-attribute">background-size</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">"/banner.png"</span>);
+  <span class="hljs-attribute">background-attachment</span>: fixed;
+}
+
+<span class="hljs-selector-id">#banner</span> <span class="hljs-selector-class">.banner-in</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">98%</span>;
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">1200px</span>;
+  <span class="hljs-attribute">height</span>: auto;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">text-align</span>: center;
+}
+
+<span class="hljs-selector-id">#banner</span> <span class="hljs-selector-class">.banner-in</span> <span class="hljs-selector-tag">h1</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">53px</span>;
+  <span class="hljs-attribute">font-weight</span>: normal;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">font-family</span>: fangsong;
+  <span class="hljs-attribute">text-shadow</span>: <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">15px</span> <span class="hljs-number">#000</span>;
+}
+
+<span class="hljs-selector-id">#banner</span> <span class="hljs-selector-class">.banner-in</span> <span class="hljs-selector-tag">p</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+  <span class="hljs-attribute">font-weight</span>: normal;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">0px</span> <span class="hljs-number">50px</span> <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">letter-spacing</span>: <span class="hljs-number">1px</span>;
+  <span class="hljs-attribute">text-shadow</span>: <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">15px</span> <span class="hljs-number">#000</span>;
+}
+
+<span class="hljs-selector-id">#banner</span> <span class="hljs-selector-class">.banner-in</span> <span class="hljs-selector-tag">button</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f15c08</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">20px</span> <span class="hljs-number">0px</span> <span class="hljs-number">100px</span> <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">30px</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">220px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">220px</span>;
+  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0px</span> <span class="hljs-number">10px</span> <span class="hljs-number">20px</span> -<span class="hljs-number">5px</span> <span class="hljs-number">#000</span>;
+  <span class="hljs-attribute">outline</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">cursor</span>: pointer;
+  <span class="hljs-attribute">text-shadow</span>: <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">10px</span> -<span class="hljs-number">5px</span> <span class="hljs-number">#000</span>;
+}
+
+<span class="hljs-selector-id">#banner</span> <span class="hljs-selector-class">.banner-in</span> <span class="hljs-selector-tag">button</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#bf4600</span>;
+}
+
+<span class="hljs-selector-id">#banner</span> <span class="hljs-selector-class">.banner-in</span> <span class="hljs-selector-tag">button</span> <span class="hljs-selector-tag">h2</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">50px</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">font-weight</span>: normal;
+  <span class="hljs-attribute">letter-spacing</span>: <span class="hljs-number">2px</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;
+}
+
+<span class="hljs-selector-id">#banner</span> <span class="hljs-selector-class">.banner-in</span> <span class="hljs-selector-tag">button</span> <span class="hljs-selector-tag">p</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">20px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">font-weight</span>: normal;
+  <span class="hljs-attribute">letter-spacing</span>: <span class="hljs-number">2px</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">30px</span>;
+}
+
+<span class="hljs-comment">/**************/</span>
+<span class="hljs-comment">/*** SEARCH ***/</span>
+<span class="hljs-comment">/**************/</span>
+
+<span class="hljs-selector-id">#search</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">600px</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">position</span>: relative;
+}
+
+<span class="hljs-selector-id">#search</span> <span class="hljs-selector-class">.noresults</span> {
+  <span class="hljs-attribute">width</span>: auto;
+  <span class="hljs-attribute">height</span>: auto;
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translate</span>(-<span class="hljs-number">50%</span>, -<span class="hljs-number">50%</span>);
+  <span class="hljs-attribute">text-align</span>: center;
+}
+
+<span class="hljs-selector-id">#search</span> <span class="hljs-selector-class">.noresults</span> <span class="hljs-selector-class">.icon</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">250px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">250px</span>;
+  <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">"/noresults.png"</span>);
+  <span class="hljs-attribute">background-repeat</span>: no-repeat;
+  <span class="hljs-attribute">background-size</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">background-position</span>: center;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+}
+
+<span class="hljs-selector-id">#search</span> <span class="hljs-selector-class">.noresults</span> <span class="hljs-selector-class">.text</span> {
+  <span class="hljs-attribute">width</span>: auto;
+  <span class="hljs-attribute">height</span>: auto;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">50px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span> <span class="hljs-number">0px</span>;
+}
+
+<span class="hljs-selector-id">#search</span> <span class="hljs-selector-class">.noresults</span> <span class="hljs-selector-class">.text</span> <span class="hljs-selector-tag">h2</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;
+  <span class="hljs-attribute">font-weight</span>: normal;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#2f97f2</span>;
+  <span class="hljs-attribute">letter-spacing</span>: <span class="hljs-number">3px</span>;
+  <span class="hljs-attribute">text-transform</span>: uppercase;
+}
+
+<span class="hljs-selector-id">#search</span> <span class="hljs-selector-class">.search-in</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">display</span>: flex;
+}
+
+<span class="hljs-selector-id">#search</span> <span class="hljs-selector-class">.search-in</span> <span class="hljs-selector-class">.results</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">40%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+}
+<span class="hljs-selector-id">#search</span> <span class="hljs-selector-class">.search-in</span> <span class="hljs-selector-class">.results</span> <span class="hljs-selector-class">.header</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">62px</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">display</span>: block;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f0f9fe</span>;
+  <span class="hljs-attribute">box-shadow</span>: inset <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">10px</span> -<span class="hljs-number">5px</span> <span class="hljs-number">#f0f9fe</span>;
+}
+
+<span class="hljs-selector-id">#search</span> <span class="hljs-selector-class">.search-in</span> <span class="hljs-selector-class">.results</span> <span class="hljs-selector-class">.header</span> <span class="hljs-selector-tag">h2</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">18px</span>;
+  <span class="hljs-attribute">font-weight</span>: bold;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#2f97f2</span>;
+}
+
+<span class="hljs-selector-id">#search</span> <span class="hljs-selector-class">.search-in</span> <span class="hljs-selector-class">.results</span> <span class="hljs-selector-class">.content</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">537px</span>;
+  <span class="hljs-attribute">overflow</span>: scroll;
+}
+
+<span class="hljs-selector-id">#search</span> <span class="hljs-selector-class">.search-in</span> <span class="hljs-selector-class">.results</span> <span class="hljs-selector-class">.content</span> <span class="hljs-selector-class">.location</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-built_in">calc</span>(<span class="hljs-number">100%</span> - <span class="hljs-number">40px</span>);
+  <span class="hljs-attribute">height</span>: auto;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">20px</span> auto;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f0f9fe</span>;
+  <span class="hljs-attribute">cursor</span>: pointer;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">3px</span>;
+  <span class="hljs-attribute">box-shadow</span>: -<span class="hljs-number">10px</span> <span class="hljs-number">10px</span> <span class="hljs-number">20px</span> -<span class="hljs-number">11px</span> <span class="hljs-number">#bdbdbd</span>;
+}
+
+<span class="hljs-selector-id">#search</span> <span class="hljs-selector-class">.search-in</span> <span class="hljs-selector-class">.results</span> <span class="hljs-selector-class">.content</span> <span class="hljs-selector-class">.location</span> <span class="hljs-selector-tag">h2</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">font-weight</span>: bold;
+  <span class="hljs-attribute">display</span>: block;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#2f97f2</span>;
+  <span class="hljs-attribute">position</span>: relative;
+}
+
+<span class="hljs-selector-id">#search</span> <span class="hljs-selector-class">.search-in</span> <span class="hljs-selector-class">.results</span> <span class="hljs-selector-class">.content</span> <span class="hljs-selector-class">.location</span> <span class="hljs-selector-tag">h2</span> <span class="hljs-selector-tag">span</span> {
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">right</span>: <span class="hljs-number">18px</span>;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">24px</span>;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+  <span class="hljs-attribute">letter-spacing</span>: <span class="hljs-number">1px</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#151515</span>;
+}
+
+<span class="hljs-selector-id">#search</span> <span class="hljs-selector-class">.search-in</span> <span class="hljs-selector-class">.results</span> <span class="hljs-selector-class">.content</span> <span class="hljs-selector-class">.location</span> <span class="hljs-selector-tag">address</span>,
+<span class="hljs-selector-id">#search</span> <span class="hljs-selector-class">.search-in</span> <span class="hljs-selector-class">.results</span> <span class="hljs-selector-class">.content</span> <span class="hljs-selector-class">.location</span> <span class="hljs-selector-tag">p</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+  <span class="hljs-attribute">font-weight</span>: normal;
+  <span class="hljs-attribute">font-style</span>: normal;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#222222</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span> <span class="hljs-number">15px</span> <span class="hljs-number">15px</span> <span class="hljs-number">50px</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">30px</span>;
+  <span class="hljs-attribute">position</span>: relative;
+}
+
+<span class="hljs-selector-id">#search</span> <span class="hljs-selector-class">.search-in</span> <span class="hljs-selector-class">.results</span> <span class="hljs-selector-class">.content</span> <span class="hljs-selector-class">.location</span> <span class="hljs-selector-tag">p</span> {
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">20px</span> <span class="hljs-number">27px</span> <span class="hljs-number">20px</span>;
+}
+
+<span class="hljs-selector-id">#search</span> <span class="hljs-selector-class">.search-in</span> <span class="hljs-selector-class">.results</span> <span class="hljs-selector-class">.content</span> <span class="hljs-selector-class">.location</span> <span class="hljs-selector-tag">address</span> <span class="hljs-selector-tag">i</span>,
+<span class="hljs-selector-id">#search</span> <span class="hljs-selector-class">.search-in</span> <span class="hljs-selector-class">.results</span> <span class="hljs-selector-class">.content</span> <span class="hljs-selector-class">.location</span> <span class="hljs-selector-tag">p</span> <span class="hljs-selector-tag">i</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#2f97f2</span>;
+  <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;
+}
+
+<span class="hljs-selector-id">#search</span> <span class="hljs-selector-class">.search-in</span> <span class="hljs-selector-class">.results</span> <span class="hljs-selector-class">.content</span> <span class="hljs-selector-class">.location</span> <span class="hljs-selector-tag">address</span> <span class="hljs-selector-tag">i</span> {
+  <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">15px</span>;
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">4px</span>;
+}
+
+<span class="hljs-selector-id">#search</span> <span class="hljs-selector-class">.maparea</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">60%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0px</span>;
+  <span class="hljs-attribute">position</span>: relative;
+}
+
+<span class="hljs-selector-id">#cover</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">"/loading.gif"</span>);
+  <span class="hljs-attribute">background-repeat</span>: no-repeat;
+  <span class="hljs-attribute">background-size</span>: <span class="hljs-number">100px</span> <span class="hljs-number">100px</span>;
+  <span class="hljs-attribute">background-position</span>: center;
+}
+
+</pre>
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+  </div>
+</body>
+</html>

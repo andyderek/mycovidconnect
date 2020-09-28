@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>node.js.yml</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" media="all" href="../../doc-style.css" />
+  <script src="../../doc-filelist.js"></script>
+  <script>
+    var relativeDir = "../../";
+    var thisFile = ".github/workflows/node.js.yml";
+    var defaultSidebar = true;
+  </script>
+  <script src="../../doc-script.js"></script>
+
+</head>
+<body>
+  <div id="sidebar_wrapper">
+    <div id="sidebar_switch">
+      <span class="tree">Files</span>
+      <span class="headings">Headings</span>
+    </div>
+    <div id="tree"></div>
+    <div id="headings">
+
+    </div>
+  </div>
+  <div id="sidebar-toggle"></div>
+  <div id="container">
+    <div class="background highlight"></div>
+<table cellpadding="0" cellspacing="0">
+  <tbody>
+    
+      <tr>
+        <td class="docs">
+          <h1>node.js.yml</h1>
+        </td>
+        <td class="code highlight"></td>
+      </tr>
+    
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-1" id="section-1"></a>
+</div>
+<p>This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="yaml">
+<span class="hljs-attr">name:</span> <span class="hljs-string">Node.js</span> <span class="hljs-string">CI</span>
+
+<span class="hljs-attr">on:</span>
+  <span class="hljs-attr">push:</span>
+    <span class="hljs-attr">branches:</span> <span class="hljs-string">[</span> <span class="hljs-string">master</span> <span class="hljs-string">]</span>
+  <span class="hljs-attr">pull_request:</span>
+    <span class="hljs-attr">branches:</span> <span class="hljs-string">'*'</span>
+
+<span class="hljs-attr">jobs:</span>
+  <span class="hljs-attr">build:</span>
+
+    <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span>
+
+    <span class="hljs-attr">strategy:</span>
+      <span class="hljs-attr">matrix:</span>
+        <span class="hljs-attr">node-version:</span> <span class="hljs-string">[10.x,</span> <span class="hljs-number">12.</span><span class="hljs-string">x,</span> <span class="hljs-number">14.</span><span class="hljs-string">x]</span>
+
+    <span class="hljs-attr">steps:</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout@v2</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Use</span> <span class="hljs-string">Node.js</span> <span class="hljs-string">${{</span> <span class="hljs-string">matrix.node-version</span> <span class="hljs-string">}}</span>
+      <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/setup-node@v1</span>
+      <span class="hljs-attr">env:</span>
+        <span class="hljs-attr">GOOGLE_MAPS_API_KEY:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.GOOGLE_MAPS_API_KEY</span> <span class="hljs-string">}}</span>
+        <span class="hljs-attr">FIREBASE_API_KEY:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.FIREBASE_API_KEY</span> <span class="hljs-string">}}</span>
+        <span class="hljs-attr">FIREBASE_AUTH_DOMAIN:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.FIREBASE_AUTH_DOMAIN</span> <span class="hljs-string">}}</span>
+        <span class="hljs-attr">FIREBASE_DB_URL:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.FIREBASE_DB_URL</span> <span class="hljs-string">}}</span>
+        <span class="hljs-attr">FIREBASE_PROJECT_ID:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.FIREBASE_PROJECT_ID</span> <span class="hljs-string">}}</span>
+        <span class="hljs-attr">FIREBASE_STORAGE_BUCKET:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.FIREBASE_STORAGE_BUCKET</span> <span class="hljs-string">}}</span>
+        <span class="hljs-attr">FIREBASE_MSG_SENDER_ID:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.FIREBASE_MSG_SENDER_ID</span> <span class="hljs-string">}}</span>
+        <span class="hljs-attr">FIREBASE_APP_ID:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.FIREBASE_APP_ID</span> <span class="hljs-string">}}</span>
+        <span class="hljs-attr">FIREBASE_MEASUREMENT_ID:</span> <span class="hljs-string">${{</span> <span class="hljs-string">secrets.FIREBASE_MEASUREMENT_ID</span> <span class="hljs-string">}}</span>
+      <span class="hljs-attr">with:</span>
+        <span class="hljs-attr">node-version:</span> <span class="hljs-string">${{</span> <span class="hljs-string">matrix.node-version</span> <span class="hljs-string">}}</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">run:</span> <span class="hljs-string">./startup.sh</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">run:</span> <span class="hljs-string">CI=false</span> <span class="hljs-string">NODE_ENV=production</span> <span class="hljs-string">npm</span> <span class="hljs-string">ci</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">run:</span> <span class="hljs-string">CI=false</span> <span class="hljs-string">npm</span> <span class="hljs-string">run</span> <span class="hljs-string">build</span> <span class="hljs-string">--if-present</span>
+
+</pre>
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+  </div>
+</body>
+</html>

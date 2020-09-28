@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>README.md</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" media="all" href="doc-style.css" />
+  <script src="doc-filelist.js"></script>
+  <script>
+    var relativeDir = "";
+    var thisFile = "README.md";
+    var defaultSidebar = true;
+  </script>
+  <script src="doc-script.js"></script>
+
+</head>
+<body>
+  <div id="sidebar_wrapper">
+    <div id="sidebar_switch">
+      <span class="tree">Files</span>
+      <span class="headings">Headings</span>
+    </div>
+    <div id="tree"></div>
+    <div id="headings">
+
+      <div class="heading h1">
+        <a href="#mycovidconnect">mycovidconnect</a>
+      </div>
+
+      <div class="heading h1">
+        <a href="#start-here-project-setup-guidelines">START HERE: Project Setup Guidelines</a>
+      </div>
+
+      <div class="heading h1">
+        <a href="#technical-setup">Technical Setup</a>
+      </div>
+
+      <div class="heading h4">
+        <a href="#run-docker-image-to-start-instance">Run docker image to start instance.</a>
+      </div>
+
+      <div class="heading h3">
+        <a href="#always-follow-guidelines">Always follow Guidelines!!</a>
+      </div>
+
+      <div class="heading h1">
+        <a href="#in-general-follow-this-javascript-styleguide">In general follow this Javascript Styleguide</a>
+      </div>
+
+      <div class="heading h3">
+        <a href="#npm-start">npm start</a>
+      </div>
+
+    </div>
+  </div>
+  <div id="sidebar-toggle"></div>
+  <div id="container">
+    <div class="docs markdown"><div class="pilwrap" id="mycovidconnect">
+  <h1>
+    <a href="#mycovidconnect" name="mycovidconnect" class="pilcrow"></a>
+mycovidconnect
+  </h1>
+</div>
+<p><a href="https://depshield.github.io"><img src="https://depshield.sonatype.org/badges/owner/repository/depshield.svg" alt="DepShield Badge"></a></p>
+<p><a href="https://www.codetriage.com/xcov19/mycovidconnect"><img src="https://www.codetriage.com/xcov19/mycovidconnect/badges/users.svg" alt="Open Source Helpers"></a></p>
+<p><a href="https://app.netlify.com/sites/dreamy-keller-b8ad36/deploys"><img src="https://api.netlify.com/api/v1/badges/38c2a5f4-bac5-4bec-8d11-a9f08b5b6f71/deploy-status" alt="Netlify Status"></a></p>
+<div class="pilwrap" id="start-here-project-setup-guidelines">
+  <h1>
+    <a href="#start-here-project-setup-guidelines" name="start-here-project-setup-guidelines" class="pilcrow"></a>
+START HERE: Project Setup Guidelines
+  </h1>
+</div>
+<ul>
+<li>We use React;</li>
+<li>Know how to run tsc with babel: https://babeljs.io/blog/2018/08/27/7.0.0</li>
+<li>Lets agree on JS Guideline</li>
+</ul>
+<div class="pilwrap" id="technical-setup">
+  <h1>
+    <a href="#technical-setup" name="technical-setup" class="pilcrow"></a>
+Technical Setup
+  </h1>
+</div>
+<div class="pilwrap" id="run-docker-image-to-start-instance">
+  <h4>
+    <a href="#run-docker-image-to-start-instance" name="run-docker-image-to-start-instance" class="pilcrow"></a>
+Run docker image to start instance.
+  </h4>
+</div>
+<pre><code class="bash">
+docker-compose -f <span class="hljs-string">"docker-compose.yml"</span> up -d --build
+</code></pre>
+<p>Typescript to compile project.
+Babel does the transpiling from target to es5 browser compatible code, tsc does the type-checking.
+<a href="https://babeljs.io/blog/2018/08/27/7.0.0">See this</a> for more info on how to run babel projects using tsc.</p>
+<div class="pilwrap" id="always-follow-guidelines">
+  <h3>
+    <a href="#always-follow-guidelines" name="always-follow-guidelines" class="pilcrow"></a>
+Always follow Guidelines!!
+  </h3>
+</div>
+<hr>
+<div class="pilwrap" id="in-general-follow-this-javascript-styleguide">
+  <h1>
+    <a href="#in-general-follow-this-javascript-styleguide" name="in-general-follow-this-javascript-styleguide" class="pilcrow"></a>
+In general follow this <a href="https://google.github.io/styleguide/jsguide.html">Javascript Styleguide</a>
+  </h1>
+</div>
+<p>Automated 911 for Patients</p>
+<p>For Watching build run compiler: <code>./node_modules/.bin/tsc -p tsconfig.json --watch</code></p>
+<div class="pilwrap" id="npm-start">
+  <h3>
+    <a href="#npm-start" name="npm-start" class="pilcrow"></a>
+<code>npm start</code>
+  </h3>
+</div>
+<p>Runs the app in development mode.<br>
+Open <a href="http://localhost:3000">http://localhost:3000</a> to view it in the browser.</p>
+<p>The page will automatically reload if you make changes to the code.<br>
+You will see the build errors and lint warnings in the console.</p>
+<p>Check package.json for scripts on how to build and run.</p>
+</div>
+  </div>
+</body>
+</html>
